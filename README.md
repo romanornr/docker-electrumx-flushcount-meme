@@ -30,7 +30,13 @@ original usage from https://github.com/lukechilds/docker-electrumx
  ```
  You need to change this if you want it to work 
  
-# This script is for now only tested on Viacoin with VialectrumX fork
+ ### TODO
+ - [x] flush
+-  [ ] cronjob every x days to flush
+-  [ ] make it easier to use
+ 
+## This script is for now only tested on Viacoin with VialectrumX fork
+Feel free to contribute, this would help others running ElectrumX within a docker container
 
 License
 -------
