@@ -25,7 +25,8 @@ original usage from https://github.com/lukechilds/docker-electrumx
   ```
 
  please note in this script -v is different:
- ```-v /root/electrumx:/data \
+ ```
+ -v /root/electrumx:/data \
  ```
  You need to change this if you want it to work 
  
