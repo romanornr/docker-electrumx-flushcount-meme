@@ -1,3 +1,8 @@
+# Copyright (c) 2019 Romano (Viacoin developer)
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+
 # This shell script is for ElectrumX docker containers using https://github.com/lukechilds/docker-electrumx
 # This script is to solve the ElectrumX DB::flush_count overflow meme https://github.com/kyuupichan/electrumx/issues/185
 # A flush_count would overflow after 455 days for Bitcoin. For altcoins with a faster blocktime it happens much quicker.
