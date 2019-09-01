@@ -34,6 +34,15 @@ original usage from https://github.com/lukechilds/docker-electrumx
  - [x] flush
 -  [ ] cronjob every x days to flush
 -  [ ] make it easier to use
+
+### manual cronjob example to flush every day
+
+```sudo crontab -e```
+
+add to the end of the file
+
+```55 23 * * * /path/to/flush.sh```
+
  
 ## This script is for now only tested on Viacoin with VialectrumX fork
 Feel free to contribute, this would help others running ElectrumX within a docker container
