@@ -32,6 +32,11 @@ echo $CONTAINERID
 
 # Here we stop the container running electrumx
 STOP=$(docker stop $(docker ps -a -q))
+
+# WGET that meme script and rename it to a .py file
+DOWNLOAD=$(docker run -v /root/electrumx:/data lukechilds/electrumx wget https://raw.githubusercontent.com/kyuupichan/electrumx/master/electrumx_compact_history)
+TOPY=$(docker run -v /root/electrumx:/data lukechilds/electrumx mv electrumx_compact_history electrumx_compact_history.py)
+
 # Run that meme script 
 FLUSH=$(docker run   -e DAEMON_URL=http://rpcuser:rpcpass@44.61.99.89:8332 -e COIN=BitcoinSegwit -e CACHE_MB=1600 -p 50002:50002 -v /root/electrumx:/data lukechilds/electrumx python electrumx_compact_history.py)
 RESTART=$(docker run \
