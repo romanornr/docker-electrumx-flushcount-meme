@@ -41,7 +41,7 @@ original usage from https://github.com/lukechilds/docker-electrumx
 
 add to the end of the file
 
-```55 23 * * * /path/to/flush.sh```
+```55 23 * * * /path/to/flushcount.sh```
 
  
 ## This script is for now only tested on Viacoin with VialectrumX fork
