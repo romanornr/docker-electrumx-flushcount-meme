@@ -43,6 +43,8 @@ add to the end of the file
 
 ```55 23 * * * /path/to/flushcount.sh```
 
+```sudo /etc/init.d/cron start```
+
  
 ## This script is for now only tested on Viacoin with VialectrumX fork
 Feel free to contribute, this would help others running ElectrumX within a docker container
